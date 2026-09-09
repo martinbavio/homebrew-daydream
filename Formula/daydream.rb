@@ -1,16 +1,16 @@
 class Daydream < Formula
   desc "Design tool for the web where real HTML/CSS is the grain, with an MCP host for agents"
   homepage "https://github.com/martinbavio/daydream-public"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_arm do
-      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.3/daydream-0.1.3-darwin-arm64.tar.gz"
-      sha256 "2d3a1cbbdca20dc0cf3f6a9c7ef1d29b385c686ed0119561674f66deb9e1573f"
+      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.4/daydream-0.1.4-darwin-arm64.tar.gz"
+      sha256 "af2cc55eaf4a036dcf5900aa610d4f9f7a8f9cd2c467cb97579a938ad34e3f3c"
     end
     on_intel do
-      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.3/daydream-0.1.3-darwin-x64.tar.gz"
-      sha256 "50a4c8d31864d0a5816ed5e8a1cc5b1811c4ae748dccd62e0a65c5c146d680a4"
+      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.4/daydream-0.1.4-darwin-x64.tar.gz"
+      sha256 "1c3e4aa95c003033ce64f07f105461a39d860d1c94f24096a9c892b744447dc6"
     end
   end
 
@@ -35,7 +35,7 @@ class Daydream < Formula
       Then register it with every agent harness on this machine: `daydream connect`
       (or by hand, for Claude Code:
         claude mcp add daydream --transport http http://127.0.0.1:37326/mcp --scope user).
-      Upgrades: `brew upgrade daydream`.
+      Upgrades: `daydream update` (it runs brew for you and restarts the service).
     EOS
   end
 
