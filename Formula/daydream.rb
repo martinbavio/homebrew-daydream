@@ -1,16 +1,16 @@
 class Daydream < Formula
   desc "Design tool for the web where real HTML/CSS is the grain, with an MCP host for agents"
   homepage "https://github.com/martinbavio/daydream-public"
-  version "0.1.37"
+  version "0.1.38"
 
   on_macos do
     on_arm do
-      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.37/daydream-0.1.37-darwin-arm64.tar.gz"
-      sha256 "9c1ace5387d54ca3343bb8a0bed42c23cb45978c3e15d417863a32a289246c1b"
+      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.38/daydream-0.1.38-darwin-arm64.tar.gz"
+      sha256 "5f57f0a2f713ba6eed2213f2d5dd161ff735e935ce76b8cd04ef9486b861b6d6"
     end
     on_intel do
-      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.37/daydream-0.1.37-darwin-x64.tar.gz"
-      sha256 "6b683cc9901bfc2337b728cd194dd1134b0b3c22996b7897c53f01fb4a55d312"
+      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.38/daydream-0.1.38-darwin-x64.tar.gz"
+      sha256 "7281e35050d7f0a0f60b35916789f1b7c4c79b3817d86492418923090f5bf93b"
     end
   end
 
