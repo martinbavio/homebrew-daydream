@@ -1,16 +1,16 @@
 class Daydream < Formula
   desc "Design tool for the web where real HTML/CSS is the grain, with an MCP host for agents"
   homepage "https://github.com/martinbavio/daydream-public"
-  version "0.1.51"
+  version "0.1.52"
 
   on_macos do
     on_arm do
-      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.51/daydream-0.1.51-darwin-arm64.tar.gz"
-      sha256 "7884258b48f2dffc48221604be74f749d0d51e35388405f5f8437449e5af6048"
+      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.52/daydream-0.1.52-darwin-arm64.tar.gz"
+      sha256 "e86f886d537368b6fc3e9e349286fea4b4898d480e41c3a9c106453684fab01d"
     end
     on_intel do
-      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.51/daydream-0.1.51-darwin-x64.tar.gz"
-      sha256 "57c30d36ec82d15c271665d2670befa864f03d63cb6e348db63919f19ddf7767"
+      url "https://github.com/martinbavio/daydream-public/releases/download/v0.1.52/daydream-0.1.52-darwin-x64.tar.gz"
+      sha256 "4662be9234a4bd99005b4cd5f806f1473b1e21bfb86edf1d3d7649d668fed5c2"
     end
   end
 
@@ -30,8 +30,9 @@ class Daydream < Formula
 
   def caveats
     <<~EOS
-      Start the host once with `daydream`, or keep it running across logins with
-      `brew services start daydream` (it serves ~/Daydream on 127.0.0.1:37326).
+      Open a project with `daydream <folder>` (any folder of html files; `daydream`
+      alone reopens the last one), or keep the host running across logins with
+      `brew services start daydream`. It listens on 127.0.0.1:37326.
       Then register it with every agent harness on this machine: `daydream connect`
       (or by hand, for Claude Code:
         claude mcp add daydream --transport http http://127.0.0.1:37326/mcp --scope user).
